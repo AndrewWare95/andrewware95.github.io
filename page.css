@@ -10,6 +10,10 @@
 .s-margin{margin:16px!important}
 .s-margin-top{margin-top:16px!important}
 .s-margin-bottom{margin-bottom:16px!important}
+.s-margin-right{margin-right: 16px!important}
 .s-center{text-align:center!important}
+.s-border-white{border:1px solid #ccc!important}
+.s-border-black{border:1px solid #222!important}
 .s-border-top{border-top:1px solid #ccc!important}
 .s-border-bottom{border-bottom:1px solid #111!important}
+.s-border-right{border-right: 1px solid #111!important}
