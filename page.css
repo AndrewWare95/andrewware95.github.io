@@ -18,3 +18,5 @@
 .s-border-bottom{border-bottom:1px solid #ccc!important}
 .s-border-right{border-right: 1px solid #111!important}
 .s-background-colour{color: #202020;}
+.s-white-text{color: #ccc;}
+.s-black,.s-hover-black:hover{color:#fff!important;background-color:#000!important}
