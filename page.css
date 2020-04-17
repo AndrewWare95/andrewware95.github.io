@@ -5,7 +5,11 @@
 .s-right-display{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
 .s-topmiddle-display{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
 .s-bottommiddle-display{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.s-topleft-display{position:absolute;left:0;top:0}
+.s-topright-display{position:absolute;right:0;top:0}
 .s-margin{margin:16px!important}
 .s-margin-top{margin-top:16px!important}
 .s-margin-bottom{margin-bottom:16px!important}
 .s-center{text-align:center!important}
+.s-border-top{border-top:1px solid #ccc!important}
+.s-border-bottom{border-bottom:1px solid #ccc!important}
