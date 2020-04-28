@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<title>Tetravex</title>
+<script src="Build/UnityLoader.js"></script>
+<script> UnityLoader.instantiate("unityContainer", "Bubble_Bounce_Build/ZBuild.json"); </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size: 16px;}
+img {margin-bottom: -8px;}
+
+</style>
+<body class="w3-content w3-black" style="max-width:1500px;">
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="#home" class="w3-bar-item w3-button"><b>AW</b> Portfolio</a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="#thegame" class="w3-bar-item w3-button">The Game</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- The App Section -->
+<div class="w3-padding-64 w3-white">
+  <div class="w3-row-padding">
+    <div class="w3-col l8 m6">
+      <h1 class="w3-jumbo"><b>Bubble Bounce</b></h1>
+      <h1 class="w3-xxxlarge w3-text-green"><b>Multi-platform side scroller</b></h1>
+      <p>Bubble bounce is a multi-platform game developed with Unity using C#.</p>
+      <p>The aim of the game is to survive for as long as possible while trying to avoid oncoming obstacles.</p>
+      <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small" onclick="document.getElementById('download').style.display='block'">
+        <i class="fa fa-download"></i> Download Application
+      </button>
+      <p>Minimum O.S. - Android 5.0 <i class="fa fa-android w3-xlarge w3-text-green"></i></p>
+    </div>
+    <div class="w3-col l4 m6">
+      <img src="images\tet_menu.jpg" class="w3-image w3-right" width="335" height="471">
+      <div class="w3-center w3-hide-large w3-hide-medium">
+        <button class="w3-button w3-block w3-padding-large" onclick="document.getElementById('download').style.display='block'">
+          <i class="fa fa-download"></i> Download Application
+        </button>
+        <img src="images\tet_menu.jpg" class="w3-image w3-margin-top" width="335" height="471">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 
+<div id="download" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('download').style.display='none'" class="fa fa-remove w3-xlarge w3-button w3-transparent w3-right w3-xlarge"></i>
+      <h2 class="w3-wide">DOWNLOAD</h2>
+      <p>Download the app in AppStore, Google Play or Microsoft Store.</p>
+      <i class="fa fa-android w3-large"></i> <i class="fa fa-apple w3-large"></i> <i class="fa fa-windows w3-large"></i>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('download').style.display='none'">Fake Download</button>
+    </div>
+  </div>
+</div>-->
+
+<div id="thegame" class="w3-padding-64 w3-dark-grey">
+  <div id="unityContainer" style="width: 960px; height: 600px; margin: auto"></div>
+</div>
+
+</body>
+</html>
