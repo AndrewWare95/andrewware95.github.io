@@ -13,15 +13,29 @@ img {margin-bottom: -8px;}
 
 </style>
 <body class="w3-content w3-black" style="max-width:1500px;">
+
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="#home" class="w3-bar-item w3-button"><b>AW</b> Portfolio</a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="#thegame" class="w3-bar-item w3-button">The Game</a>
+        <a href="#features" class="w3-bar-item w3-button">Features</a>
+        <a href="#images" class="w3-bar-item w3-button">Images</a>
+      </div>
+    </div>
+  </div>
 <!-- The App Section -->
-<div class="w3-padding-64 w3-white">
+<div id="thegame" class="w3-padding-64 w3-white">
   <div class="w3-row-padding">
     <div class="w3-col l8 m6">
       <h1 class="w3-jumbo"><b>Tetravex</b></h1>
       <h1 class="w3-xxxlarge w3-text-green"><b>Android Puzzle Game</b></h1>
-      <p>Tetravex is a single player 2D puzzle that was originally developed for windows systems to play in an internet browser
-        The player is given a grid of tiles, typically 3x3. Each edge of the tiles has a different value or colour assigned to it. The aim of the game is to attempt to match each edge of the tiles to another edge that has the same value or number. 
-      
+      <p>Tetravex is a single player 2D puzzle that was originally developed for windows systems to play in an internet browser.
+        The player is given a grid of tiles, typically 3x3. 
+        Each edge of the tiles has a different value or colour assigned to it. </p>
+
+        <p>The aim of the game is to attempt to match each edge of the tiles to another edge that has the same value or number. 
         Each puzzle is randomly generated, then the player must attempt to solve the puzzle in as little time possible.
         </p>
       <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small" onclick="document.getElementById('download').style.display='block'">
@@ -30,12 +44,12 @@ img {margin-bottom: -8px;}
       <p>Minimum O.S. - Android 5.0 <i class="fa fa-android w3-xlarge w3-text-green"></i></p>
     </div>
     <div class="w3-col l4 m6">
-      <img src="images\tet_menu.jpg" class="w3-image w3-right" width="335" height="471">
+      <img src="images\tet_menu.jpg" class="w3-right" style="width: 50%;">
       <div class="w3-center w3-hide-large w3-hide-medium">
         <button class="w3-button w3-block w3-padding-large" onclick="document.getElementById('download').style.display='block'">
           <i class="fa fa-download"></i> Download Application
         </button>
-        <img src="images\tet_menu.jpg" class="w3-image w3-margin-top" width="335" height="471">
+        
       </div>
     </div>
   </div>
@@ -56,12 +70,48 @@ img {margin-bottom: -8px;}
 </div>
 
 <!-- Features Section -->
-<div class="w3-container w3-padding-64 w3-dark-grey w3-center">
-  <h1 class="w3-jumbo"><b>Features</b></h1>
-  <p>Add feature info.</p>
+<div id ="features"class="w3-container w3-padding-64 w3-dark-grey">
+  <h1 class="w3-jumbo w3-center"><b>Features</b></h1>
 
-  <div class="w3-row" style="margin-top:64px">
-  </div>
+    <!-- Grid -->
+    <div class="w3-row w3-container w3-margin-top">
+  
+      <div class="w3-col l4 w3-light-grey w3-container w3-padding-16">
+        <h1 class="w3-xxxlarge w3-text-green w3-center"><b>Game Modes</b></h1>
+        <p><span class="w3-xlarge">Classic - </span> Complete the puzzle as quickly as possible.</p>
+        <p><span class="w3-xlarge">Time Trial - </span> Complete the puzzle before the timer runs out.</p>
+        <p><span class="w3-xlarge">Arcade - </span> Complete as many puzzles as possible in the given time-frame</p>
+      </div>
+      <div class="w3-col l4 w3-black w3-container w3-padding-16">
+        <h1 class="w3-xxxlarge w3-text-green w3-center"><b>Difficulty</b></h1>
+        <h3>The game implements algorithms that are designed to help adjust the difficulty of the game.</h3>
+        <p><span class="w3-xlarge">Unique Edges - </span> Control the number of tiles with an edge that hasn't got a pair and must be placed along the perimeter. </p>
+        <p><span class="w3-xlarge">Possible solutions - </span> Control how many different solutions are possible.</p>
+        <p><span class="w3-xlarge">Colour/Value Range - </span> The range in different values is controlled by the difficulty settings</p>
+      </div>
+
+      <div class="w3-col l4 w3-light-grey w3-container w3-padding-16">
+        <h1 class="w3-xxxlarge w3-text-green w3-center"><b>Options</b></h1>
+        <p><span class="w3-xlarge">Grid Size - </span> Adjustable grid sizes, 2x2 to 5x5.</p>
+        <p><span class="w3-xlarge">Colour Scheme - </span>Option to disable or change the colour schemes</p>
+      </div>
+    </div>
+</div>
+
+<div id ="images"class="w3-container w3-padding-64 w3-grey">
+  <h1 class="w3-jumbo w3-center w3-text-black"><b>Sample Images</b></h1>
+
+  <div class="w3-row-padding" style="margin-bottom:128px">
+    <div class="w3-third">
+      <img src="images\time_trial_5.jpg" style="width:100%">
+      <img src="images\settings.jpg" style="width: 100%; margin-top: 16px;">
+   </div>
+    <div class="w3-third">
+      <img src="images\tet_menu.jpg" style="width:100%">
+    </div>
+    <div class="w3-third">
+      <img src="images\new_game.jpg" style="width:100%">
+  </div>   
 </div>
 
 </body>
