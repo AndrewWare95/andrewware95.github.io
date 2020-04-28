@@ -3,6 +3,13 @@
 <title>AndWare Portfolio</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script language="JavaScript">
+  var frmvalidator  = new Validator("contactform");
+  frmvalidator.addValidation("name","req","Please provide your name");
+  frmvalidator.addValidation("email","req","Please provide your email");
+  frmvalidator.addValidation("email","email",
+    "Please enter a valid email address");
+  </script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="page.css">
 <body>
@@ -91,6 +98,18 @@
         <i class="fa fa-paper-plane"></i> SEND MESSAGE
       </button>
     </form>
+
+
+    <form method="post" name="contact_form"
+action="email.php">
+    Your Name:
+    <input type="text" name="name">
+    Email Address:
+    <input type="text" name="email">
+    Message:
+    <textarea name="message"></textarea>
+    <input type="submit" value="Submit">
+</form>
   </div>
 
 <!-- End page content -->
