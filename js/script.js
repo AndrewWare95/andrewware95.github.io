@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('emailButton').click(function(){
+    $('email').click(function(){
         var clickButton = $(this).val();
         var emailForm = 'emailForm.php',
         data = {
