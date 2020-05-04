@@ -20,8 +20,8 @@ if(empty($name) || empty($visitor_email))
 
 $email_form = 'caerapps@gmail.com';
 $email_subject = "New form submission";
-$email_body  = "You have received an email from $name. \n".
-                "email address: $visitor_email\n".
+$email_body  = "You have received an email from $name. \n"
+                "Email address: $visitor_email\n"
                 "Message : \n $message";
 
 $to = "caerapps@gmail.com";
