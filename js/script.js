@@ -1,12 +1,8 @@
 $(document).ready(function(){
-    $('email').click(function(){
-        var clickButton = $(this).val();
-        var emailForm = 'emailForm.php',
-        data = {
-            'action' : clickButton
-        };
-        $.post(emailForm, data, function(response) {
+    $('.email').click(function(){
+        $get('emailForm.php', function(data) {
             alert("Action performed successfully");
         });
+        return false;
     });
 });
