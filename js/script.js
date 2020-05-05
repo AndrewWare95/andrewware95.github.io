@@ -5,4 +5,5 @@ $(document).ready(function(){
         });
         return false;
     });
+    $('.randomImage').load("random_image.php");
 });
