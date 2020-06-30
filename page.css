@@ -17,6 +17,7 @@
 .s-border-black{border:1px solid #222!important}
 .s-border-top{border-top:1px solid #ccc!important}
 .s-border-bottom{border-bottom:1px solid #ccc!important}
+.s-border-bottom-short{border-bottom:1px solid #ccc!important;width: 30%;}
 .s-border-right{border-right: 1px solid #111!important}
 .s-background-colour{color: #202020;}
 .s-white-text{color: #ccc;}
